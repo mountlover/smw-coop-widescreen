@@ -1,15 +1,11 @@
+*.log
+*.sfc
 *.smc
-
 *.srm
-
 *.exe
-
 *.Ext
-
 *.usage
-
 *.zst
-
 *.000
 *.ips
 *.zip

@@ -736,7 +736,7 @@ LuigiOWLives:				; Stripe Image Bullshit -- though it's additional bullshit I di
 		PLB
 		RTL
 
-if !THREEPLAYER || !!SMALLPLAYERS
+if not !SMALLPLAYERS
 pushpc
 org $00F5D5
 JML BigDeath
@@ -783,7 +783,7 @@ else
 pushpc
 org $00F5FE
 STA $71
-	if !THREEPLAYER || !!SMALLPLAYERS
+	if not !SMALLPLAYERS
 	STA $19
 	else
 	STZ $19
