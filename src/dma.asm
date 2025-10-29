@@ -174,7 +174,7 @@ BEQ .skip3
 ;Upper halves of Luigi's tiles
 ;;
 
-if !SEPERATEGFX && !!THREEPLAYER
+if !SEPERATEGFX
 LDA.l SeperatePointer+2
 TAY
 else
@@ -273,7 +273,7 @@ AND #$18
 CMP #$10
 BNE .nocapeluigi
 
-if !SEPERATEGFX && !!THREEPLAYER
+if !SEPERATEGFX
 LDA.l SeperatePointer+2
 TAY
 else

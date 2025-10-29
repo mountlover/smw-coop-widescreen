@@ -653,7 +653,7 @@ EightCalcs:
 	++
 		CLC
 		ADC.w #ExGraphics
-if !SEPERATEGFX && !!THREEPLAYER
+if !SEPERATEGFX
 		CLC
 		ADC #$0400					; skip two rows of 8x8s
 endif
@@ -673,7 +673,7 @@ SixteenCalcs:
 		LDA ($00),y
 		JSR TileToAddr
 		CLC
-if !SEPERATEGFX && !!THREEPLAYER
+if !SEPERATEGFX
 		ADC.w #SeperateP2GFX
 else
 		ADC #$2000
@@ -683,7 +683,7 @@ endif
 		LDA ($02),y
 		JSR TileToAddr
 		CLC
-if !SEPERATEGFX && !!THREEPLAYER
+if !SEPERATEGFX
 		ADC.w #SeperateP2GFX
 else
 		ADC #$2000

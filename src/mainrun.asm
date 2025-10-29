@@ -29,7 +29,7 @@ GravityData:
 db $06,$03
 
 Continue:
-if not !SMALLPLAYERS
+if not(!SMALLPLAYERS)
 LDA $0DB9
 BIT #$18
 BNE +

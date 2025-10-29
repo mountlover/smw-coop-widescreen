@@ -41,7 +41,7 @@ CMP #$F8
 BCS .notokay
 NotFarRightRealEnd:
 
-if not !SMALLPLAYERS
+if not(!SMALLPLAYERS)
 							;No Small mario
 LDA $19
 BNE +
